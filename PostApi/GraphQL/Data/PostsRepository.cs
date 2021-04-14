@@ -24,12 +24,12 @@ namespace PostApi.GraphQL.Data
 
         public IEnumerable<Post> Get_Posts()
         {
-            return _context.PostItems.AsEnumerable();
+            return _context.posts.AsEnumerable();
         }
 
         public Post Get_Post(int id)
         {
-            var post =  _context.PostItems.Find(id);
+            var post =  _context.posts.Find(id);
 
             return post;
         }

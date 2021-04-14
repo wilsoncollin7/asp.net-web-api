@@ -24,14 +24,14 @@ namespace PostApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
-            return await _context.PostItems.ToListAsync();
+            return await _context.posts.ToListAsync();
         }
 
         // GET: api/Posts/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Post>> GetPost(long id)
         {
-            var post = await _context.PostItems.FindAsync(id);
+            var post = await _context.posts.FindAsync(id);
 
             if (post == null)
             {
@@ -46,7 +46,7 @@ namespace PostApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPost(long id, Post post)
         {
-            if (id != post.Id)
+            if (id != post.id)
             {
                 return BadRequest();
             }
@@ -77,23 +77,23 @@ namespace PostApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Post>> PostPost(Post post)
         {
-            _context.PostItems.Add(post);
+            _context.posts.Add(post);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetPost), new { id = post.Id }, post);
+            return CreatedAtAction(nameof(GetPost), new { id = post.id }, post);
         }
 
         // DELETE: api/Posts/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePost(long id)
         {
-            var post = await _context.PostItems.FindAsync(id);
+            var post = await _context.posts.FindAsync(id);
             if (post == null)
             {
                 return NotFound();
             }
 
-            _context.PostItems.Remove(post);
+            _context.posts.Remove(post);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -101,7 +101,7 @@ namespace PostApi.Controllers
 
         private bool PostExists(long id)
         {
-            return _context.PostItems.Any(e => e.Id == id);
+            return _context.posts.Any(e => e.id == id);
         }
     }
 }

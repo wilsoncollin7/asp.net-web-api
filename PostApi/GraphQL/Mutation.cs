@@ -10,10 +10,10 @@ namespace PostApi.GraphQL
         {
             var post = new Post
             {
-                Title = title,
-                Body = body
+                title = title,
+                body = body
             };
-            dbContext.PostItems.Add(post);
+            dbContext.posts.Add(post);
             dbContext.SaveChanges();
             return post;
         }

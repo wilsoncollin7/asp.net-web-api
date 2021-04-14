@@ -19,6 +19,8 @@ using PostApi.Models;
 using PostApi.GraphQL;
 using PostApi.Controllers;
 using PostApi.GraphQL.Data;
+using Microsoft.AspNetCore.Identity;
+using System.Web.Providers.Entities;
 
 namespace PostApi
 {
@@ -42,7 +44,14 @@ namespace PostApi
         {
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddDbContext<PostContext>(opt => opt.UseInMemoryDatabase("PostList"));
+            //services.AddDbContext<PostContext>(opt => opt.UseInMemoryDatabase("PostList"));
+
+            services.AddDbContext<PostContext>(options =>
+                options.UseNpgsql(_config["ConnectionString:Postgres_Connection"]));
+            
+            /*services.AddIdentity<User, IdentityRole<long> > ()
+                            .AddEntityFrameworkStores<PostContext, long>()
+                            .AddDefaultTokenProviders();*/
 
             services.AddScoped<PostsRepository>();
 

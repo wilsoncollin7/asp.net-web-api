@@ -6,6 +6,6 @@ namespace PostApi.Models
     {
         public PostContext(DbContextOptions<PostContext> options) : base(options) { }
 
-        public DbSet<Post> PostItems { get; set; }
+        public DbSet<Post> posts { get; set; }
     }
 }
