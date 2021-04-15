@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "vxNoz07Er5BuXWbvUXDaMkfBsEpTCt11H6Q/HU4AhXqmO79MactWwGDsDXX5JYe+y9nG9olUQcoKbx2/Zncofw==",
+  "dgSpecHash": "/5IrTZySR7dJFDqi8EC1ObIpGbqWOO8dXxMRwDsoBKPoZEwJLSsC23uxfzPvtCjFBYOSzjBhlnD0XgcgydUFIA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\practice\\full-stack-practice\\PostApi\\asp.net-web-api\\PostApi\\PostApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\collin.wilson\\.nuget\\packages\\entityframework\\6.0.0\\entityframework.6.0.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\greendonut\\11.1.0\\greendonut.11.1.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\hotchocolate\\11.1.0\\hotchocolate.11.1.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\hotchocolate.abstractions\\11.1.0\\hotchocolate.abstractions.11.1.0.nupkg.sha512",
@@ -29,7 +28,6 @@
     "C:\\Users\\collin.wilson\\.nuget\\packages\\hotchocolate.utilities.introspection\\11.1.0\\hotchocolate.utilities.introspection.11.1.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\hotchocolate.validation\\11.1.0\\hotchocolate.validation.11.1.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
-    "C:\\Users\\collin.wilson\\.nuget\\packages\\microsoft.aspnet.providers.core\\2.0.0\\microsoft.aspnet.providers.core.2.0.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.1.1\\microsoft.aspnetcore.hosting.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.1.1\\microsoft.aspnetcore.hosting.server.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -131,26 +129,5 @@
     "C:\\Users\\collin.wilson\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\collin.wilson\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Providers.Core 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Providers.Core",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

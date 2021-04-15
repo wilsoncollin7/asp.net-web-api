@@ -37,7 +37,6 @@
           "HotChocolate.AspNetCore": "11.1.0",
           "HotChocolate.AspNetCore.GraphiQL": "10.5.5",
           "HotChocolate.AspNetCore.Playground": "10.5.5",
-          "Microsoft.AspNet.Providers.Core": "2.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "5.0.5",
           "Microsoft.NETCore.App": "2.2.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -330,22 +329,6 @@
         },
         "compile": {
           "PostApi.dll": {}
-        }
-      },
-      "EntityFramework/6.0.0": {
-        "runtime": {
-          "lib/net45/EntityFramework.SqlServer.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.20911.0"
-          },
-          "lib/net45/EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.20911.0"
-          }
-        },
-        "compile": {
-          "lib/net45/EntityFramework.SqlServer.dll": {},
-          "lib/net45/EntityFramework.dll": {}
         }
       },
       "GreenDonut/11.1.0": {
@@ -726,20 +709,6 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.0"
           }
-        }
-      },
-      "Microsoft.AspNet.Providers.Core/2.0.0": {
-        "dependencies": {
-          "EntityFramework": "6.0.0"
-        },
-        "runtime": {
-          "lib/net40/System.Web.Providers.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.21122.0"
-          }
-        },
-        "compile": {
-          "lib/net40/System.Web.Providers.dll": {}
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.1.1": {
@@ -3511,13 +3480,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/6.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-y6lX/VMghGBV6TvgQS4Q2WK6kAcOoyD+TQxObN9utd0JsMMdMxyqARxKbvgi7KEIbQ8osZ4ZvImaly7l3NDFDw==",
-      "path": "entityframework/6.0.0",
-      "hashPath": "entityframework.6.0.0.nupkg.sha512"
-    },
     "GreenDonut/11.1.0": {
       "type": "package",
       "serviceable": true,
@@ -3685,13 +3647,6 @@
       "sha512": "sha512-rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Providers.Core/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JMk31PExMANVDc04aSUyIlcL3pkFVyNg/dDn+ZZzmhZ2CBctI90BWQH1L0zXgD61ZWW5r4ybInV362sRKWIC+A==",
-      "path": "microsoft.aspnet.providers.core/2.0.0",
-      "hashPath": "microsoft.aspnet.providers.core.2.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/2.1.1": {
       "type": "package",

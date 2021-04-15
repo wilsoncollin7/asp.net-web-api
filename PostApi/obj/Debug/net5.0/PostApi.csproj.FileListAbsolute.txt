@@ -136,8 +136,6 @@ C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Deb
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\PostApi.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\ref\PostApi.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\PostApi.pdb
-C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\EntityFramework.SqlServer.dll
-C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\EntityFramework.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\GreenDonut.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\HotChocolate.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\HotChocolate.Abstractions.dll
@@ -162,7 +160,6 @@ C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Deb
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\HotChocolate.Utilities.Introspection.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\HotChocolate.Validation.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\Humanizer.dll
-C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\System.Web.Providers.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projects\practice\full-stack-practice\PostApi\asp.net-web-api\PostApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll

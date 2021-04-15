@@ -20,18 +20,15 @@ using PostApi.GraphQL;
 using PostApi.Controllers;
 using PostApi.GraphQL.Data;
 using Microsoft.AspNetCore.Identity;
-using System.Web.Providers.Entities;
 
 namespace PostApi
 {
     public class Startup
     {
         public readonly IConfiguration _config;
-        [Obsolete]
-        public readonly IHostingEnvironment _env;
+        public readonly IWebHostEnvironment _env;
 
-        [Obsolete]
-        public Startup(IConfiguration config, IHostingEnvironment env)
+        public Startup(IConfiguration config, IWebHostEnvironment env)
         {
             _config = config;
             _env = env;
@@ -39,7 +36,6 @@ namespace PostApi
 
         public IConfiguration Configuration { get; }
 
-        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -47,42 +43,27 @@ namespace PostApi
             services.AddDbContext<PostContext>(options =>
                 options.UseNpgsql(_config["ConnectionString:Postgres_Connection"]));
             
-            /*services.AddIdentity<User, IdentityRole<long> > ()
-                            .AddEntityFrameworkStores<PostContext, long>()
-                            .AddDefaultTokenProviders();*/
-
             services.AddScoped<PostsRepository>();
 
-            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-            services.AddGraphQL(sp => SchemaBuilder.New()
-                .AddServices(sp)
+            services.AddGraphQLServer()
                 .AddQueryType<QueryType>()
-                .AddMutationType<MutationType>()
-                .Create());
-
-            services.AddControllers();
-
+                .AddMutationType<MutationType>();
         }
 
-        [Obsolete]
         public void Configure(IApplicationBuilder app)
         {
 
             app.UseHttpsRedirection();
 
-            app.UseWebSockets()
-                .UseGraphQL("/graphql")
+            /*app.UseGraphQL("/graphql")
                 .UseGraphiQL("/graphql")
-                .UsePlayground("/graphql");
+                .UsePlayground("/graphql");*/
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapGraphQL();
             });
         }
     }
