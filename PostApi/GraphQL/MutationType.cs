@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HotChocolate.Types;
+using PostApi.GraphQL;
+using PostApi.GraphQL.Types;
+using PostApi.Models;
 
 namespace PostApi.GraphQL
 {
@@ -10,10 +13,8 @@ namespace PostApi.GraphQL
     {
         protected override void Configure(IObjectTypeDescriptor<Mutation> descriptor)
         {
-            descriptor
-                .Field(t => t.AddPost(default, default, default))
-                .Argument("title", a => a.Type<NonNullType<StringType>>())
-                .Argument("body", a => a.Type<NonNullType<StringType>>());
+            descriptor.Field(t => t.AddPost(default))
+                .Argument("post", a => a.Type<NonNullType<PostInputType>>());
         }
     }
 }

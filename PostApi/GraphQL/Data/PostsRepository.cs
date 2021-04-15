@@ -33,6 +33,14 @@ namespace PostApi.GraphQL.Data
 
             return post;
         }
+        
+        public Post Add_Post(Post post)
+        {
+            _context.posts.Add(post);
+            _context.SaveChanges();
+
+            return post;
+        }
 
         public string Get_Test()
         {

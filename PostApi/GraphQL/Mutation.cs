@@ -1,21 +1,21 @@
 ﻿using PostApi.Models;
 using HotChocolate;
 using HotChocolate.Types;
+using PostApi.GraphQL.Data;
 
 namespace PostApi.GraphQL
 {
     public class Mutation
     {
-        public Post AddPost ([Service] PostContext dbContext, string title, string body)
+        private readonly PostsRepository _PRepository;
+
+        public Mutation(PostsRepository PRepository)
         {
-            var post = new Post
-            {
-                title = title,
-                body = body
-            };
-            dbContext.posts.Add(post);
-            dbContext.SaveChanges();
-            return post;
+            _PRepository = PRepository;
+        }
+        public Post AddPost (Post post)
+        {
+            return _PRepository.Add_Post(post);
         }
     }
 }

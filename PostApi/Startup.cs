@@ -44,8 +44,6 @@ namespace PostApi
         {
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            //services.AddDbContext<PostContext>(opt => opt.UseInMemoryDatabase("PostList"));
-
             services.AddDbContext<PostContext>(options =>
                 options.UseNpgsql(_config["ConnectionString:Postgres_Connection"]));
             
